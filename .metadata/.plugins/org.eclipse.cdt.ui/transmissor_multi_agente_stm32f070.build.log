@@ -1,0 +1,10 @@
+15:49:38 **** Incremental Build of configuration Debug for project transmissor_multi_agente_stm32f070 ****
+make -j8 all 
+arm-none-eabi-size   transmissor_multi_agente_stm32f070.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16412	     40	   1808	  18260	   4754	transmissor_multi_agente_stm32f070.elf
+Finished building: default.size.stdout
+ 
+
+15:49:38 Build Finished. 0 errors, 0 warnings. (took 327ms)
+
