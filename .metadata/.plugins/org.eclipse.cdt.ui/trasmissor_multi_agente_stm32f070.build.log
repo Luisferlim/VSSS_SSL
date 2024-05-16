@@ -1,0 +1,17 @@
+10:35:28 **** Incremental Build of configuration Debug for project trasmissor_multi_agente_stm32f070 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070x6 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "trasmissor_multi_agente_stm32f070.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/ruisodebian/Desktop/VSSS/trasmissor_multi_agente_stm32f070/STM32F070F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="trasmissor_multi_agente_stm32f070.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: trasmissor_multi_agente_stm32f070.elf
+ 
+arm-none-eabi-size   trasmissor_multi_agente_stm32f070.elf 
+arm-none-eabi-objdump -h -S  trasmissor_multi_agente_stm32f070.elf  > "trasmissor_multi_agente_stm32f070.list"
+   text	   data	    bss	    dec	    hex	filename
+  16424	     40	   1808	  18272	   4760	trasmissor_multi_agente_stm32f070.elf
+Finished building: default.size.stdout
+ 
+Finished building: trasmissor_multi_agente_stm32f070.list
+ 
+
+10:35:29 Build Finished. 0 errors, 0 warnings. (took 367ms)
+
